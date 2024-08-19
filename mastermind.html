@@ -1,0 +1,134 @@
+<!--
+	AUTHORS: michael.rowley3@baesystems.com alexander.denton@baesystems.com elissa.bridge@baesystems.com
+	DESCRIPTION: This page is part of an interactive worksheet for individuals 
+                 completing the software WEX workshop prior to the cyberking task
+-->
+                 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- link to the stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- header bar that is going to appear at the top of the screen  -->
+        <div class="siteName">Mastermind</div>
+        <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+        <nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+            <ul id="desktopNavList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="counter.html">1. Counter</a></li>
+                <li><a href="decimalConverter.html">2. Converter</a></li>
+                <li><a href="mastermind.html">3. Mastermind</a></li>
+                <li><a href="cyberking.html">4. CyberKing</a></li>
+            </ul>
+        </nav>
+        <!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+
+        <!-- First div is for burger menu icon-->
+        <nav id="mobileNav">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="revealMobileNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!-- Navigation links (hidden by default) -->
+            <ul id="mobileNavList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="counter.html">1. Counter</a></li>
+                <li><a href="decimalConverter.html">2. Converter</a></li>
+                <li><a href="mastermind.html">3. Mastermind</a></li>
+                <li><a href="cyberking.html">4. CyberKing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <script src="executeCode.js"></script>
+
+        <!--//TODO: What about accessibility?-->
+        <!-- https://stackoverflow.com/a/48460773 -->
+        <p class="highlight">Below there is some code that randomly generates four numbers and the user has to enter their guess and attempt to guess the number correctly. After they enter a number they are told how many digits they got correct.</br>Your current task it to fill in the blanks using javascript to get the program to run.</p>
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+function generateRandomNumbers() {
+    let randomNum = Math.random() * 9000;
+    randomNum = Math.floor(1000 + randomNum);
+    window.alert("The generatedNum is:"+randomNum);
+    return randomNum.toString();
+}
+
+function isDigitCorrect(num, digit) {
+    console.log(num +", "+ digit);
+    let isDigitPresent = false;
+    
+        </textarea>
+        <p>Inside the braces for the for loop we need define a variable, i, and iterate until i is the same as the num.length</p>
+        <textarea placeholder="Your code goes here!">
+    for ( ) {
+		</textarea>
+        <p>Inside the braces for the if statement we need to check if num[i] is equal to the 'digit'.</p>
+        <textarea placeholder="Your code goes here!">
+        if ( ) {
+		</textarea>
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+            isDigitPresent = true;
+        }
+    }
+        </textarea>
+        <p>We now need to return the boolean value isDigitPresent from the function.</p>
+        <textarea placeholder="Your code goes here!"></textarea>
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+}
+
+let isGuessCorrect = false;
+
+let generatedNum = generateRandomNumbers();
+        </textarea>
+        </br>
+        <p>Inside the brackets add some code for the loop to run while isGuessCorrect false.</p>
+        <textarea placeholder="Your code goes here!">
+while ( ) {
+        </textarea>
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+    let currentGuess = prompt("Enter your guess");
+        </textarea>
+        <p>Write the code to check if currentGuess is not equal to generatedNum</p>
+        <textarea placeholder="Your code goes here!">
+    if ( ) {
+        </textarea>
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+        let numDigitsCorrect = 0;
+
+        for (let i = 0; i < generatedNum.length; i++) {
+            if (isDigitCorrect(generatedNum, currentGuess[i])) {
+        </textarea>
+        <p>add some code to increment (increase by 1) numDigitsCorrect</p>
+        <textarea placeholder="Your code goes here!"></textarea>
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+            }
+        }
+
+        window.alert("you got " + numDigitsCorrect + " digits correct.");
+    }
+    else {
+        </textarea>
+        <p>Finally we need to store the value of true into the isGuessCorrect variable.</p>
+        <textarea placeholder="Your code goes here!"></textarea>
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+    }
+}
+
+window.alert("your guess is correct");
+        </textarea>
+        </br>
+        <button onclick="execute()">RUN</button>
+
+    </main>
+</body>
+
+</html>

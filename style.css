@@ -1,0 +1,240 @@
+/*
+	CLASSIFICATION: BAE SYSTEMS PROPRIETARY
+	AUTHORS: michael.rowley3@baesystems.com alexander.denton@baesystems.com elissa.bridge@baesystems.com
+	DESCRIPTION: This stylesheet is used for the interactive worksheet for individuals 
+                 completing the software WEX workshop prior to the cyberking task
+*/
+
+/*Style accross each page and for header*/
+body {
+	font-family: sans-serif;
+	margin: 0px;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	background-color: silver;
+}
+
+.logo img {
+	padding: 1em;
+	height: 10vh;
+	object-fit: contain;
+}
+
+.siteName {
+	margin: 1em;
+	font-size: 2em;
+	color: #BE1622;
+}
+
+nav {
+	margin-left: auto;
+	position: relative;
+}
+
+
+
+/*for desktop navigation*/
+#desktopNav{
+	display:block;
+}
+
+#desktopNavList {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+
+#desktopNavList li {
+	text-align: center;
+	font-size: 15px;
+	padding: 0.1em;
+	margin-top: -15px;
+	margin: 1em;
+}
+
+#desktopNavList a {
+	text-decoration: none;
+	color: ghostwhite;
+}
+
+#desktopNavList a:hover {
+	color: gainsboro;
+}
+
+/*for mobile navigation*/
+#mobileNav{
+	display: none;
+	text-align: right;
+	background-color: #BE1622;
+}
+
+#mobileNav a.icon {
+	text-decoration: none;
+	color: ghostwhite;
+	display: block;
+	padding: 0.1em;
+	margin: 0.9em;
+	font-size: 1.5em;
+}
+
+#mobileNavList {
+	display: none;	/* to hide links unless icon is pressed*/
+	flex-direction: column;
+	list-style-type: none;
+	background-color: #BE1622;
+}
+
+#mobileNavList li {
+	text-align: right;
+}
+
+#mobileNavList a {
+	text-decoration: none;
+	color: ghostwhite;
+	display:block;
+	padding: 0.5em;
+	margin: 0.9em;
+	font-size: 1.5em;
+}
+
+#mobileNavList a:hover {
+	background-color: #9c121b;
+	color: black;
+}
+
+/*Style for the main of website*/
+main {
+	margin: auto;
+
+	flex-wrap: wrap;
+	width: 70%;
+	background-color: #ffffff;
+	padding: 1em;
+	min-height: 64.5vh;
+}
+
+/*style for headers*/
+h1 {
+	font-size: 3.5em;
+	color: #0099D2;
+}
+
+h2 {
+	font-size: 2em;
+	color: #F2BE1A;
+}
+
+.media {
+	width: 100%;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+iframe {border: none;}
+
+/*style for index.html*/
+#startLink {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    background-color: red;
+}
+
+/*style for inputs*/
+button {
+	position: fixed;
+	right: 10px;
+	top: 40%;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+textarea {
+	width: 50%;
+	margin: auto;
+	height: fit-content;
+	border: 1px solid black;
+	border-radius: 15px;
+    padding: 0.8em;
+    
+}
+textarea.fixed {
+	border: none;
+	resize: none;
+	background-color: rgba(0, 0, 0, 0.03);
+    padding: 0.8em;
+}
+button {
+	font-size: 20px;
+}
+
+/* Footer */
+footer {
+	padding: 2em;
+	text-align: center;
+	background: #34516C;
+	display: flex;
+	flex-wrap: wrap;
+
+	/*clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;*/
+}
+
+.footerSection {
+	width: 33%;
+	padding: 1em;
+	color: ghostwhite;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*Media Quereies to be used on the header*/
+@media only screen and (max-width: 990px) {
+	.siteName {
+		margin: 1.7em;
+		font-size: 1.5em;
+	}
+
+	#desktopNavList li {
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	#mobileNav {
+		display: block;
+	}
+
+	#desktopNav {
+		display: none;
+	}
+
+	.logo img {
+		height: 7vh;
+	}
+
+	.siteName {
+		margin: 0.5em; 
+		font-size: 1.5em;
+	}
+
+	header {
+		height: 7vh;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+}

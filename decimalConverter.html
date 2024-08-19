@@ -1,0 +1,138 @@
+<!--
+	AUTHORS: michael.rowley3@baesystems.com alexander.denton@baesystems.com elissa.bridge@baesystems.com
+	DESCRIPTION: This page is part of an interactive worksheet for individuals 
+                 completing the software WEX workshop prior to the cyberking task
+-->
+                 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- link to the stylesheet -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Decimal Converter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<!-- header bar that is going to appear at the top of the screen  -->
+		<div class="siteName">Decimal to Binary and Hexidecimal</div>
+		<!-- place the navigation links in a <nav> tag for accessibility purposes -->
+		<nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+			<ul id="desktopNavList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="counter.html">1. Counter</a></li>
+				<li><a href="decimalConverter.html">2. Converter</a></li>
+				<li><a href="mastermind.html">3. Mastermind</a></li>
+				<li><a href="cyberking.html">4. CyberKing</a></li>
+			</ul>
+		</nav>
+		<!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+
+		<!-- First div is for burger menu icon-->
+		<nav id="mobileNav">
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="revealMobileNav()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<!-- Navigation links (hidden by default) -->
+			<ul id="mobileNavList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="counter.html">1. Counter</a></li>
+				<li><a href="decimalConverter.html">2. Converter</a></li>
+				<li><a href="mastermind.html">3. Mastermind</a></li>
+				<li><a href="cyberking.html">4. CyberKing</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<script src="executeCode.js"></script>
+
+		<p class="highlight">Below there is some code that takes a decimal number from the user, decimalNum. The program will then convert this number to a Binary number and a Hexidecimal number.</br>Your current task it to fill in the blanks using javascript to get the program to run.</p>
+		<p>The following links will be helpfull to you understanding how to convert from Binary to Decimal(Denary) and then also what Hexidecimal is.</p>
+		<a href="https://www.bbc.co.uk/bitesize/guides/z6qqmsg/revision/3">Binary and Decimal</a>
+		<br>
+		<a href="https://www.bbc.co.uk/bitesize/guides/z6qqmsg/revision/6">Hexidecimal</a>
+		<br>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+function toBinary(decimalNum) {
+	let binaryNum = [];
+		</textarea>
+		</br>
+		<p>Inside the braces of the for loop you need to set i to 7 for the range based for loop. i needs to decrease by 1 after each loop until it is 0</p>
+		<textarea placeholder="Your code goes here!">
+	for ( ) {
+		</textarea>
+		<p>You need to find the remainer of decimalNum when divided by 2. you need to store this in the array binaryNum[i]</p>
+		<textarea placeholder="Your code goes here!"></textarea>
+		</br>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+		decimalNum = Math.trunc(decimalNum/2);
+	}
+		</textarea>
+		</br>
+		<p>You now need to add a return statement to return the binaryNum</p>
+		<textarea placeholder="Your code goes here!"></textarea>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+}
+
+function toHexidecimal(decimalNum) {
+	let hexNum = [];
+		</textarea>
+		</br>
+		<textarea placeholder="Your code goes here!">
+	for ( ) {
+		</textarea>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+		let hexDigit = decimalNum%16;
+
+		switch (hexDigit) {
+			case 10:
+				hexNum[i] = "A";
+				break;
+		</textarea>
+		<p>The following blanks require two lines of code each. One line defines the current case to convert from a number between 10 and 15 to the Hexidecimal character.</br>The second line should add the character to the current index of the array, as shown above.</p>
+		<textarea placeholder="Your code goes here!"></textarea>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+				break;
+		</textarea>
+		<textarea placeholder="Your code goes here!"></textarea>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+				break;
+		</textarea>
+		<textarea placeholder="Your code goes here!"></textarea>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+				break;
+		</textarea>
+		<textarea placeholder="Your code goes here!"></textarea>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+				break;
+		</textarea>
+		<textarea placeholder="Your code goes here!"></textarea>
+		<textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+				break;
+			default:
+				hexNum[i] = hexDigit;
+		}
+		
+		decimalNum = Math.trunc(decimalNum/16);
+	}
+	
+	return hexNum;
+}
+
+let decimalNum = prompt("Enter decimal number to convert to Binary and Hexidecimal");
+
+let binaryNum = toBinary(decimalNum);
+let hexidecimalNum = toHexidecimal(decimalNum);
+
+window.alert(decimalNum + " in:\nBinary is " + binaryNum.join("") +",\nHexidecimal is " + hexidecimalNum.join(""));
+		</textarea>
+		<button onclick="execute()">RUN</button>
+
+	</main>
+</body>
+
+</html>

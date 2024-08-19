@@ -1,0 +1,122 @@
+<!--
+	AUTHORS: michael.rowley3@baesystems.com alexander.denton@baesystems.com elissa.bridge@baesystems.com
+	DESCRIPTION: This page is part of an interactive worksheet for individuals 
+                 completing the software WEX workshop prior to the cyberking task
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- link to the stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Counter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- header bar that is going to appear at the top of the screen  -->
+        <div class="siteName">Counter</div>
+        <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+        <nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+            <ul id="desktopNavList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="counter.html">1. Counter</a></li>
+                <li><a href="decimalConverter.html">2. Converter</a></li>
+                <li><a href="mastermind.html">3. Mastermind</a></li>
+                <li><a href="cyberking.html">4. CyberKing</a></li>
+            </ul>
+        </nav>
+        <!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+
+        <!-- First div is for burger menu icon-->
+        <nav id="mobileNav">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="revealMobileNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!-- Navigation links (hidden by default) -->
+            <ul id="mobileNavList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="counter.html">1. Counter</a></li>
+                <li><a href="decimalConverter.html">2. Converter</a></li>
+                <li><a href="mastermind.html">3. Mastermind</a></li>
+                <li><a href="cyberking.html">4. CyberKing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <script src="executeCode.js"></script>
+
+        <p class="highlight">Below there is some code that takes in two inputs from the user ,startNum and stopNum. The program will then count from startNum to stopNum.</br>Your current task it to fill in the blanks using javascript to get the program to run.</p>
+        <p class="highlight">Please note that the program will only run once all blanks are filled in. There are prompts to inform you what you need to do. If you're struggling please ask one of us for help.</p>
+
+        <!--//TODO: What about accessibility?-->
+        <!-- https://stackoverflow.com/a/48460773 -->
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+var currentNum;
+var startNum = prompt("Please enter start value to count from", "start value");
+startNum = parseInt(startNum);
+var stopNum = prompt("Please enter stop value to count to", "stop value");
+stopNum = parseInt(stopNum);
+
+currentNum = startNum;
+if (startNum < stopNum) {
+</textarea>
+        </br>
+
+        <p>The above if statement checks to see if we are counting up.</br>We need a boolean statement for the while loop (inside the "( )") so the code in the curly braces will run until currentNum has reached stopNum.</p>
+        <textarea placeholder="Your code goes here!">
+    while ( ) {
+        </textarea>
+
+        </br>
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+        alert(currentNum);
+        </textarea>
+        </br>
+
+        <p>Now you need to add a line of code to increment currentNum (increase by 1)</p>
+        <textarea placeholder="Your code goes here!"></textarea>
+        </br>
+
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+    }
+}
+if (startNum > stopNum) {          
+        </textarea>
+        </br>
+
+        <p>We now want to write a loop to do the opposite of the while loop earlier in the code.</p>
+        <textarea placeholder="Your code goes here!">
+    while ( ) {
+        </textarea>
+        </br>
+
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+        alert(currentNum);
+        </textarea>
+        </br>
+
+        <p>Now we need to add a line of code to decrement currentNum (decrease by 1)</p>
+        <textarea placeholder="Your code goes here!"></textarea>
+        </br>
+
+        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+    }
+}
+if (startNum == stopNum) {
+    alert("No counting required.");
+}
+        </textarea>
+        </br>
+
+        <button onclick="execute()">RUN</button>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+button {
+	position: fixed;
+	right: 10px;
+	top: 40%;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+textarea {
+	width: 50%;
+	margin: 0 auto;
+	height: fit-content;
+	border: 1px solid black;
+	border-radius: 15px;
+}
+textarea.fixed {
+	border: none;
+	resize: none;
+	background-color: rgba(0, 0, 0, 0.03);
+}
+button {
+	font-size: 20px;
+}

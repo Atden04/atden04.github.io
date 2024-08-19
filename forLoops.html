@@ -11,14 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css"> <!-- link to the stylesheet -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello World</title>
+	<title>For Loops</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<header>
 		<!-- header bar that is going to appear at the top of the screen  -->
-		<div class="siteName">Hello World</div>
+		<div class="siteName">For Loops</div>
 		<!-- place the navigation links in a <nav> tag for accessibility purposes -->
 		<nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
 			<ul id="desktopNavList">
@@ -52,20 +52,25 @@
 	<main>
 		<script src="executeCode.js"></script>
 
-		<p class="highlight">For this level we're going to start off where all software engineers start, by outputting "Hello, World!"</p>
-		<p>For this you'll want to use an output command <i>alert();</i>. Add the text inside the brackets and remember to also add inverted commas "" around the text.</p>
-		<p>Click the button on the right when you're ready and remember to finish each line with a semi-colon <b>;</b> .</p>
-		
+		<p class="highlight">In Software Engineering it is high likely you'll need to store pieces of data that are all related, such as names of aircrafts.<br>We can store these in arrays but then we also need a way to output each value.</p>
+		<p>First of all we want to define a constant (const) array called <i>aircrafNames</i> and we want to store the following names <i>"Hawk", "Typhoon", "F-35", "Tempest"</i> in aircraftNames. This is similar to the array of cars on the powerpoint</p>
 		<textarea placeholder="Your code goes here!"></textarea>
 		</br>
+		<p>Now we need to tell the loop how long to run for. First you define a simple variable 'i': <b>let i = 0;</b><br>Secondly tell the loop when to stop: <b>i < aircraftNames.length;</b><br>Finally increment i: <b>i++</b></p>
+		<p class="highlight">NOTE: don't for get the semi-colon, like what was shown on the slides.</p>
+		<textarea>
+for ( ) {
+	alert(aircraftNames[i]);
+}
+		</textarea>
 
-		<p class="highlight">Once you've written your code, click on the RUN button on the left to run your code.<br>Once you've got it working, click 'Next' to go to the next page.</p>
+		<p>Give your code a run. Once it works try changing the items in the array <i>aircrafNames</i>. You could also add more names to the array.</p>
 		
 		<!-- Buttons to navigate between pages and run code.-->
 		<button id="runButton" onclick="execute()">RUN</button>
 		<div id="rightAlign">
-			<button onclick="window.location.href = 'index.html';"><= Previous</button>
-			<button onclick="window.location.href = 'ifStatements.html';">Next =></button>
+			<button onclick="window.location.href = 'ifStatements.html';"><= Previous</button>
+			<button onclick="window.location.href = 'counter.html';">Next =></button>
 		</div>
 
 	</main>

@@ -23,10 +23,11 @@
         <nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
             <ul id="desktopNavList">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="counter.html">1. Counter</a></li>
-                <li><a href="decimalConverter.html">2. Converter</a></li>
-                <li><a href="mastermind.html">3. Mastermind</a></li>
-                <li><a href="cyberking.html">4. CyberKing</a></li>
+				<li><a href="helloWorld.html">1. Get Started</a></li>
+                <li><a href="counter.html">2. Counter</a></li>
+                <li><a href="decimalConverter.html">3. Converter</a></li>
+                <li><a href="mastermind.html">4. Mastermind</a></li>
+                <li><a href="cyberking.html">5. CyberKing</a></li>
             </ul>
         </nav>
         <!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
@@ -40,10 +41,11 @@
             <!-- Navigation links (hidden by default) -->
             <ul id="mobileNavList">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="counter.html">1. Counter</a></li>
-                <li><a href="decimalConverter.html">2. Converter</a></li>
-                <li><a href="mastermind.html">3. Mastermind</a></li>
-                <li><a href="cyberking.html">4. CyberKing</a></li>
+				<li><a href="helloWorld.html">1. Get Started</a></li>
+                <li><a href="counter.html">2. Counter</a></li>
+                <li><a href="decimalConverter.html">3. Converter</a></li>
+                <li><a href="mastermind.html">4. Mastermind</a></li>
+                <li><a href="cyberking.html">5. CyberKing</a></li>
             </ul>
         </nav>
     </header>
@@ -126,7 +128,13 @@ while ( ) {
 window.alert("your guess is correct");
         </textarea>
         </br>
-        <button onclick="execute()">RUN</button>
+        
+        <!-- Buttons to navigate between pages and run code.-->
+        <button id="runButton" onclick="execute()">RUN</button>
+		<div id="rightAlign">
+			<button onclick="window.location.href = 'decimalConverter.html';"><= Previous</button>
+			<button onclick="window.location.href = 'cyberking.html';">Next =></button>
+		</div>
 
     </main>
 </body>

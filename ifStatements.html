@@ -1,0 +1,81 @@
+<!--
+	AUTHORS: Michael Rowley, Alexander Denton
+	DESCRIPTION: This page is part of an interactive worksheet for individuals 
+                 completing the software WEX workshop prior to the cyberking task
+-->
+                 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- link to the stylesheet -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Decimal Converter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<!-- header bar that is going to appear at the top of the screen  -->
+		<div class="siteName">Template</div>
+		<!-- place the navigation links in a <nav> tag for accessibility purposes -->
+		<nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+			<ul id="desktopNavList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="counter.html">1. Counter</a></li>
+				<li><a href="decimalConverter.html">2. Converter</a></li>
+				<li><a href="mastermind.html">3. Mastermind</a></li>
+				<li><a href="cyberking.html">4. CyberKing</a></li>
+			</ul>
+		</nav>
+		<!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+
+		<!-- First div is for burger menu icon-->
+		<nav id="mobileNav">
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="revealMobileNav()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<!-- Navigation links (hidden by default) -->
+			<ul id="mobileNavList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="counter.html">1. Counter</a></li>
+				<li><a href="decimalConverter.html">2. Converter</a></li>
+				<li><a href="mastermind.html">3. Mastermind</a></li>
+				<li><a href="cyberking.html">4. CyberKing</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<script src="executeCode.js"></script>
+
+		<p class="highlight">A good chunk of programming is based on decisions being made based on the stored data. We are going to achieve this by using an If Statement.</p>
+		<p>First of all we want to define a variable called <i>currentSeason</i> and we want to store the text <i>"summer"</i> in this variable.</p>
+		<textarea placeholder="Your code goes here!"></textarea>
+		</br>
+		<p>Now we need to write the if statement. Inside the brackets <i>( )</i> we need to compare <i>currentSeason</i> to <i>"winter"</i>.<br>In the example on the slides we used the < and > symbols in between the variable name and the number. This time we want to use == which checks for equality between the variable and the value.</p>
+		<textarea>
+if ( ) {
+	alert("Don't forget your hat, scarf and gloves before you go outside!");
+}
+		</textarea>
+		<p>Next we need to do an 'else if' for <i>currentSeason</i> equaling <i>"summer"</i> inside the brackets.</p>
+		<textarea>
+else if ( ) {
+	alert("You might need your sunglasses today!");
+}
+		</textarea>
+		<p>At the end of the if statement we need to an <i>else</i> which catches all other values that might be stored in the variable.<br> To do this we just need to add <i>else { }</i>. If you want add an alert inside the curly brackets.</p>
+		<textarea placeholder="Your code goes here!"></textarea>
+
+		<p>Give your code a run. Once it works try changing the text stored in the variable <i>currentSeason</i> to something else, maybe "summer" and see what happens.</p>
+		<p>If you feel confident enough, you could also add some more else if statements within the middle text window and have a play around.</p>
+		
+		
+		<button onclick="execute()">RUN</button>
+
+	</main>
+</body>
+
+</html>

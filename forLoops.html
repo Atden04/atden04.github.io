@@ -52,28 +52,19 @@
 	<main>
 		<script src="executeCode.js"></script>
 
-		<p class="highlight">A good chunk of programming is based on decisions being made based on the stored data. We are going to achieve this by using an If Statement.</p>
-		<p>First of all we want to define a variable called <i>currentSeason</i> and we want to store the text <i>"summer"</i> in this variable.</p>
+		<p class="highlight">In Software Engineering it is high likely you'll need to store pieces of data that are all related, such as names of aircrafts.<br>We can store these in arrays but then we also need a way to output each value.</p>
+		<p>First of all we want to define a constant (const) array called <i>aircrafNames</i> and we want to store the following names <i>"Hawk", "Typhoon", "F-35", "Tempest"</i> in aircraftNames. This is similar to the array of cars on the powerpoint</p>
 		<textarea placeholder="Your code goes here!"></textarea>
 		</br>
-		<p>Now we need to write the if statement. Inside the brackets <i>( )</i> we need to compare <i>currentSeason</i> to <i>"winter"</i>.<br>In the example on the slides we used the < and > symbols in between the variable name and the number. This time we want to use == which checks for equality between the variable and the value.</p>
+		<p>Now we need to tell the loop how long to run for. First you define a simple variable 'i': <b>let i = 0;</b><br>Secondly tell the loop when to stop: <b>i < aircraftNames.length;</b><br>Finally increment i: <b>i++</b></p>
+		<p class="highlight">NOTE: don't for get the semi-colon, like what was shown on the slides.</p>
 		<textarea>
-if ( ) {
-	alert("Don't forget your hat, scarf and gloves before you go outside!");
+for ( ) {
+	alert(aircraftNames[i]);
 }
 		</textarea>
-		<p>Next we need to do an 'else if' for <i>currentSeason</i> equaling <i>"summer"</i> inside the brackets.</p>
-		<textarea>
-else if ( ) {
-	alert("You might need your sunglasses today!");
-}
-		</textarea>
-		<p>At the end of the if statement we need to an <i>else</i> which catches all other values that might be stored in the variable.<br> To do this we just need to add <i>else { }</i>. If you want add an alert inside the curly brackets.</p>
-		<textarea placeholder="Your code goes here!"></textarea>
 
-		<p>Give your code a run. Once it works try changing the text stored in the variable <i>currentSeason</i> to something else, maybe "summer" and see what happens.</p>
-		<p>If you feel confident enough, you could also add some more else if statements within the middle text window and have a play around.</p>
-		
+		<p>Give your code a run. Once it works try changing the items in the array <i>aircrafNames</i>. You could also add more names to the array.</p>
 		
 		<button id="runButton" onclick="execute()">RUN</button>
 		<div id="rightAlign">

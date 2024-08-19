@@ -1,0 +1,66 @@
+<!--
+	AUTHORS: Michael Rowley, Alexander Denton
+	DESCRIPTION: This page is part of an interactive worksheet for individuals 
+                 completing the software WEX workshop prior to the cyberking task
+-->
+                 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- link to the stylesheet -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Decimal Converter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<!-- header bar that is going to appear at the top of the screen  -->
+		<div class="siteName">Template</div>
+		<!-- place the navigation links in a <nav> tag for accessibility purposes -->
+		<nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
+			<ul id="desktopNavList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="counter.html">1. Counter</a></li>
+				<li><a href="decimalConverter.html">2. Converter</a></li>
+				<li><a href="mastermind.html">3. Mastermind</a></li>
+				<li><a href="cyberking.html">4. CyberKing</a></li>
+			</ul>
+		</nav>
+		<!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+
+		<!-- First div is for burger menu icon-->
+		<nav id="mobileNav">
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="revealMobileNav()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<!-- Navigation links (hidden by default) -->
+			<ul id="mobileNavList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="counter.html">1. Counter</a></li>
+				<li><a href="decimalConverter.html">2. Converter</a></li>
+				<li><a href="mastermind.html">3. Mastermind</a></li>
+				<li><a href="cyberking.html">4. CyberKing</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<script src="executeCode.js"></script>
+
+		<p class="highlight">For this level we're going to start off where all software engineers start, by outputting "Hello, World!"</p>
+		<p>For this you'll want to use an output command <i>alert();</i>. Add the text inside the brackets and remember to also add inverted commas "" around the text.</p>
+		<p>Click the button on the right when you're ready and remember to finish each line with a semi-colon <b>;</b> .</p>
+		
+		<textarea placeholder="Your code goes here!"></textarea>
+		</br>
+		
+		<button id="runButton" onclick="execute()">RUN</button>
+		<div id="rightAlign"><button onclick="href='counter.html'">Next</button></div>
+
+	</main>
+</body>
+
+</html>

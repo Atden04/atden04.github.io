@@ -110,7 +110,7 @@ main {
 	margin: auto;
 
 	flex-wrap: wrap;
-	width: 70%;
+	width: 50%;
 	background-color: #ffffff;
 	padding: 1em;
 	min-height: 64.5vh;
@@ -148,7 +148,7 @@ iframe {border: none;}
 }
 
 /*style for inputs*/
-button {
+#runButton {
 	position: fixed;
 	right: 10px;
 	top: 40%;
@@ -156,8 +156,11 @@ button {
 	border: 1px solid black;
 	border-radius: 8px;
 }
+#rightAlign {
+	text-align: right;
+}
 textarea {
-	width: 50%;
+	width: 80%;
 	margin: auto;
 	height: fit-content;
 	border: 1px solid black;

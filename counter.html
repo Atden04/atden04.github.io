@@ -23,13 +23,11 @@
         <nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
             <ul id="desktopNavList">
                 <li><a href="index.html">Home</a></li>
-				<li><a href="helloWorld.html">1. Hello World</a></li>
-                <li><a href="ifStatements.html">2. If</a></li>
-                <li><a href="forLoops.html">3. For Loop</a></li>
-                <li><a href="counter.html">4. Counter</a></li>
-                <li><a href="decimalConverter.html">5. Converter</a></li>
-                <li><a href="mastermind.html">6. Mastermind</a></li>
-                <li><a href="cyberking.html">7. CyberKing</a></li>
+				<li><a href="helloWorld.html">1. Get Started</a></li>
+                <li><a href="counter.html">2. Counter</a></li>
+                <li><a href="decimalConverter.html">3. Converter</a></li>
+                <li><a href="mastermind.html">4. Mastermind</a></li>
+                <li><a href="cyberking.html">5. CyberKing</a></li>
             </ul>
         </nav>
         <!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
@@ -43,13 +41,11 @@
             <!-- Navigation links (hidden by default) -->
             <ul id="mobileNavList">
                 <li><a href="index.html">Home</a></li>
-				<li><a href="helloWorld.html">1. Hello World</a></li>
-                <li><a href="ifStatements.html">2. If</a></li>
-                <li><a href="forLoops.html">3. For Loop</a></li>
-                <li><a href="counter.html">4. Counter</a></li>
-                <li><a href="decimalConverter.html">5. Converter</a></li>
-                <li><a href="mastermind.html">6. Mastermind</a></li>
-                <li><a href="cyberking.html">7. CyberKing</a></li>
+				<li><a href="helloWorld.html">1. Get Started</a></li>
+                <li><a href="counter.html">2. Counter</a></li>
+                <li><a href="decimalConverter.html">3. Converter</a></li>
+                <li><a href="mastermind.html">4. Mastermind</a></li>
+                <li><a href="cyberking.html">5. CyberKing</a></li>
             </ul>
         </nav>
     </header>
@@ -121,7 +117,10 @@ if (startNum == stopNum) {
         </br>
 
         <button id="runButton" onclick="execute()">RUN</button>
-		<div id="rightAlign"><button onclick="href='counter.html'">Next</button></div>
+		<div id="rightAlign">
+			<button onclick="window.location.href = 'forLoops.html';"><= Previous</button>
+			<button onclick="window.location.href = 'decimalConverter.html';">Next =></button>
+		</div>
 
     </main>
 </body>

@@ -11,22 +11,25 @@
 	<link rel="stylesheet" type="text/css" href="style.css"> <!-- link to the stylesheet -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Decimal Converter</title>
+	<title>If Statement</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<header>
 		<!-- header bar that is going to appear at the top of the screen  -->
-		<div class="siteName">Template</div>
+		<div class="siteName">If Statement</div>
 		<!-- place the navigation links in a <nav> tag for accessibility purposes -->
 		<nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
 			<ul id="desktopNavList">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="counter.html">1. Counter</a></li>
-				<li><a href="decimalConverter.html">2. Converter</a></li>
-				<li><a href="mastermind.html">3. Mastermind</a></li>
-				<li><a href="cyberking.html">4. CyberKing</a></li>
+				<li><a href="helloWorld.html">1. Hello World</a></li>
+                <li><a href="ifStatements.html">2. If</a></li>
+                <li><a href="forLoops.html">3. For Loop</a></li>
+                <li><a href="counter.html">4. Counter</a></li>
+                <li><a href="decimalConverter.html">5. Converter</a></li>
+                <li><a href="mastermind.html">6. Mastermind</a></li>
+                <li><a href="cyberking.html">7. CyberKing</a></li>
 			</ul>
 		</nav>
 		<!-- for mobile navigation https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
@@ -40,10 +43,13 @@
 			<!-- Navigation links (hidden by default) -->
 			<ul id="mobileNavList">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="counter.html">1. Counter</a></li>
-				<li><a href="decimalConverter.html">2. Converter</a></li>
-				<li><a href="mastermind.html">3. Mastermind</a></li>
-				<li><a href="cyberking.html">4. CyberKing</a></li>
+				<li><a href="helloWorld.html">1. Hello World</a></li>
+                <li><a href="ifStatements.html">2. If</a></li>
+                <li><a href="forLoops.html">3. For Loop</a></li>
+                <li><a href="counter.html">4. Counter</a></li>
+                <li><a href="decimalConverter.html">5. Converter</a></li>
+                <li><a href="mastermind.html">6. Mastermind</a></li>
+                <li><a href="cyberking.html">7. CyberKing</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -73,7 +79,8 @@ else if ( ) {
 		<p>If you feel confident enough, you could also add some more else if statements within the middle text window and have a play around.</p>
 		
 		
-		<button onclick="execute()">RUN</button>
+		<button id="runButton" onclick="execute()">RUN</button>
+		<div id="rightAlign"><button onclick="href='counter.html'">Next</button></div>
 
 	</main>
 </body>

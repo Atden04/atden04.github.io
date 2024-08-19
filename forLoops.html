@@ -11,14 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css"> <!-- link to the stylesheet -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello World</title>
+	<title>For Loops</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<header>
 		<!-- header bar that is going to appear at the top of the screen  -->
-		<div class="siteName">Hello World</div>
+		<div class="siteName">For Loops</div>
 		<!-- place the navigation links in a <nav> tag for accessibility purposes -->
 		<nav id="desktopNav"> <!-- place the navigation links in a <nav> tag for accessibility purposes -->
 			<ul id="desktopNavList">
@@ -56,14 +56,28 @@
 	<main>
 		<script src="executeCode.js"></script>
 
-		<p class="highlight">For this level we're going to start off where all software engineers start, by outputting "Hello, World!"</p>
-		<p>For this you'll want to use an output command <i>alert();</i>. Add the text inside the brackets and remember to also add inverted commas "" around the text.</p>
-		<p>Click the button on the right when you're ready and remember to finish each line with a semi-colon <b>;</b> .</p>
-		
+		<p class="highlight">A good chunk of programming is based on decisions being made based on the stored data. We are going to achieve this by using an If Statement.</p>
+		<p>First of all we want to define a variable called <i>currentSeason</i> and we want to store the text <i>"summer"</i> in this variable.</p>
 		<textarea placeholder="Your code goes here!"></textarea>
 		</br>
+		<p>Now we need to write the if statement. Inside the brackets <i>( )</i> we need to compare <i>currentSeason</i> to <i>"winter"</i>.<br>In the example on the slides we used the < and > symbols in between the variable name and the number. This time we want to use == which checks for equality between the variable and the value.</p>
+		<textarea>
+if ( ) {
+	alert("Don't forget your hat, scarf and gloves before you go outside!");
+}
+		</textarea>
+		<p>Next we need to do an 'else if' for <i>currentSeason</i> equaling <i>"summer"</i> inside the brackets.</p>
+		<textarea>
+else if ( ) {
+	alert("You might need your sunglasses today!");
+}
+		</textarea>
+		<p>At the end of the if statement we need to an <i>else</i> which catches all other values that might be stored in the variable.<br> To do this we just need to add <i>else { }</i>. If you want add an alert inside the curly brackets.</p>
+		<textarea placeholder="Your code goes here!"></textarea>
 
-		<p class="highlight">Once you've written your code, click on the RUN button on the left to run your code.<br>Once you've got it working, click 'Next' to go to the next page.</p>
+		<p>Give your code a run. Once it works try changing the text stored in the variable <i>currentSeason</i> to something else, maybe "summer" and see what happens.</p>
+		<p>If you feel confident enough, you could also add some more else if statements within the middle text window and have a play around.</p>
+		
 		
 		<button id="runButton" onclick="execute()">RUN</button>
 		<div id="rightAlign"><button onclick="href='counter.html'">Next</button></div>

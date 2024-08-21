@@ -58,7 +58,7 @@
 
         <!--//TODO: What about accessibility?-->
         <!-- https://stackoverflow.com/a/48460773 -->
-        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+        <textarea id="autoresizing">
 var currentNum;
 var startNum = prompt("Please enter start value to count from", "start value");
 startNum = parseInt(startNum);
@@ -124,6 +124,15 @@ if (startNum == stopNum) {
 		</div>
 
     </main>
+	<script type="text/javascript">
+	        textarea = document.querySelector("#autoresizing");
+	        textarea.addEventListener('input', autoResize, false);
+	 
+	        function autoResize() {
+	            this.style.height = 'auto';
+	            this.style.height = this.scrollHeight + 'px';
+	        }
+    	</script>
 </body>
 
 </html>

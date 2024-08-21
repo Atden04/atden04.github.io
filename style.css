@@ -34,11 +34,6 @@ nav {
 	position: relative;
 }
 
-#autoresizing {
-    display: block;
-    overflow: hidden;
-    resize: none;
-}
 
 
 
@@ -166,12 +161,14 @@ iframe {border: none;}
 	text-align: right;
 }
 textarea {
-	width: 80%;
-	margin: auto;
-	height: fit-content;
-	border: 1px solid black;
-	border-radius: 15px;
-    	padding: 2.0em;
+  field-sizing: content;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+    
 }
 textarea.fixed {
 	border: none;

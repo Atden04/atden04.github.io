@@ -58,7 +58,7 @@
 
         <!--//TODO: What about accessibility?-->
         <!-- https://stackoverflow.com/a/48460773 -->
-        <textarea id="autoresizing">
+        <textarea readonly id="autoresizing">
 var currentNum;
 var startNum = prompt("Please enter start value to count from", "start value");
 startNum = parseInt(startNum);
@@ -71,21 +71,21 @@ if (startNum < stopNum) {
         </br>
 
         <p>The above if statement checks to see if we are counting up.</br>We need to add a statement for the while loop (inside the "( )") so the code in the curly braces will run until currentNum has reached stopNum.<br>Hint: try using the < sign between two vairables.</p>
-        <textarea placeholder="Your code goes here!">
+        <textarea id="autoresizing" placeholder="Your code goes here!">
     while ( ) {
         </textarea>
 
         </br>
-        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+        <textarea readonly id="autoresizing">
         alert(currentNum);
         </textarea>
         </br>
 
         <p>Now you need to add a line of code to increment currentNum (increase by 1)</p>
-        <textarea placeholder="Your code goes here!"></textarea>
+        <textarea id="autoresizing" placeholder="Your code goes here!"></textarea>
         </br>
 
-        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+        <textarea readonly id="autoresizing">
     }
 }
 if (startNum > stopNum) {          
@@ -93,21 +93,21 @@ if (startNum > stopNum) {
         </br>
 
         <p>We now want to write a loop to do the opposite of the while loop earlier in the code. You'll need to add some code inside the brackets but you may need to use a different sign.</p>
-        <textarea placeholder="Your code goes here!">
+        <textarea id="autoresizing" placeholder="Your code goes here!">
     while ( ) {
         </textarea>
         </br>
 
-        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+        <textarea readonly id="autoresizing">
         alert(currentNum);
         </textarea>
         </br>
 
         <p>Now we need to add a line of code to decrement currentNum (decrease by 1)</p>
-        <textarea placeholder="Your code goes here!"></textarea>
+        <textarea id="autoresizing" placeholder="Your code goes here!"></textarea>
         </br>
 
-        <textarea readonly onclick="this.style.height = this.scrollHeight + 'px';" class="fixed">
+        <textarea readonly id="autoresizing">
     }
 }
 if (startNum == stopNum) {
